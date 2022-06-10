@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC", "MVC", "{400FDBAC-01B2-4DAA-A3CB-72172A4CA49B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RazorPages", "RazorPages", "{7B7C3552-7C85-45F8-9C37-FCE0B1729C27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{D152C876-D40F-4B65-A3B9-CDD4CE6329A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{920B1C0B-1E6A-4F86-90CD-5C0F0132DF54}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\efcore-codefirst-fluentapi-approach-data.sql = Scripts\efcore-codefirst-fluentapi-approach-data.sql
+		Scripts\efcore-codefirst-fluentapi-approach-schema.sql = Scripts\efcore-codefirst-fluentapi-approach-schema.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet.EFCore.CodeFirstFluentApi.Library", "Library\DotNet.EFCore.CodeFirstFluentApi.Library\DotNet.EFCore.CodeFirstFluentApi.Library.csproj", "{DB1ED441-DFC3-4EF0-8F9D-DE190F3E27B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet.EFCore.CodeFirstFluentApi.MvcApp", "MVC\DotNet.EFCore.CodeFirstFluentApi.MvcApp\DotNet.EFCore.CodeFirstFluentApi.MvcApp.csproj", "{B1D187AC-74BA-4510-BD7E-533DB6164EEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet.EFCore.CodeFirstFluentApi.RazorApp", "RazorPages\DotNet.EFCore.CodeFirstFluentApi.RazorApp\DotNet.EFCore.CodeFirstFluentApi.RazorApp.csproj", "{19D482B9-677B-42F8-8AD3-3CED0528342A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB1ED441-DFC3-4EF0-8F9D-DE190F3E27B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1ED441-DFC3-4EF0-8F9D-DE190F3E27B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1ED441-DFC3-4EF0-8F9D-DE190F3E27B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1ED441-DFC3-4EF0-8F9D-DE190F3E27B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D187AC-74BA-4510-BD7E-533DB6164EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D187AC-74BA-4510-BD7E-533DB6164EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D187AC-74BA-4510-BD7E-533DB6164EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D187AC-74BA-4510-BD7E-533DB6164EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D482B9-677B-42F8-8AD3-3CED0528342A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D482B9-677B-42F8-8AD3-3CED0528342A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D482B9-677B-42F8-8AD3-3CED0528342A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D482B9-677B-42F8-8AD3-3CED0528342A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB1ED441-DFC3-4EF0-8F9D-DE190F3E27B4} = {D152C876-D40F-4B65-A3B9-CDD4CE6329A6}
+		{B1D187AC-74BA-4510-BD7E-533DB6164EEE} = {400FDBAC-01B2-4DAA-A3CB-72172A4CA49B}
+		{19D482B9-677B-42F8-8AD3-3CED0528342A} = {7B7C3552-7C85-45F8-9C37-FCE0B1729C27}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {578019FD-F24F-4C3C-8A2B-26B27C2BDE8E}
+	EndGlobalSection
+EndGlobal

@@ -1,6 +1,6 @@
 <div style="color:cornflowerblue">
 
-# DotNet Entity Framework Core - Code First Approach Sample Library
+# DotNet Entity Framework Core - Code First Fluent API Approach Sample Library
 
 </div>
 

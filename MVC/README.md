@@ -62,11 +62,12 @@ Language : `C#` <br/>
 5. Create `Models`, `Entity Type Configuration` and `Database Context`.
 
    - Update `OnConfiguring` method in DbContext for getting connection string from JSON config file or some secure vault like Azure Key Vault etc.
+      <pre><code style="color:#00aaaa">optionsBuilder.UseSqlServer(connectionString, options => options.EnableRetryOnFailure());</code></pre>
    - Update `OnModelCreating` method in DbContext for adding/applying Entity Type Configuration on `ModelBuilder`.
-   <pre><code style="color:#00aaaa">// Default Schema
-   modelBuilder.HasDefaultSchema("dbo");<br/>
-   // Apply entity type configuration
-   modelBuilder.ApplyConfiguration(new EmployeeConfiguration());</code></pre>
+      <pre><code style="color:#00aaaa">// Default Schema
+      modelBuilder.HasDefaultSchema("dbo");
+     <br/>// Apply entity type configuration
+      modelBuilder.ApplyConfiguration(new EmployeeConfiguration());</code></pre>
 
 6. Launch `Package Manager Console`. Choose project with EF NuGet Packages Installed (E.g., `DotNet.EFCore.CodeFirstFluentApi.MvcApp`) as `Default` and `Startup` Project.
 

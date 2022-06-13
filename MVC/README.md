@@ -128,7 +128,6 @@ Language : `C#` <br/>
 12. Register DbContext and DB Initializer in Application Builder Services Collection before performing Application Build either in `Program.cs` or `Startup.cs`.
     <pre><code style="color:#00aaaa">builder.Services.AddDbContext<{DB Context Name}>();
     MyDbInitializer.Initialize(new {DB Context Name}());</code></pre>
-    </code></pre>
 13. Now `DbContext` can be injected in `Controller` and can be used to access database.
 14. Implement either `Repository/Unit of Work(UoW)/Factory Pattern etc`., to separte operations based on entity using injected `DbContext`.
 15. Pass transactional data to `Views` using `Models`.
